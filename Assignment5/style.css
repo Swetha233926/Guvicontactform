@@ -1,0 +1,224 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+#contactcontainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+/* Contact Us Section */
+#contactus-container {
+    width: 45%;
+    padding-right: 20px;
+    margin-top: 80px;
+    
+}
+
+.contactus-heading {
+    font-size: 2em;
+    color: #000;
+    
+}
+
+.heading p {
+    margin-top: 12px;
+    font-size: 1.1em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.contactusinformationcontainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contactus-logos {
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* .contactus-logos img {
+    width: 60px;
+    height: 60px;
+} */
+
+.contactus-logos-information-heading {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.contactus-logos-information{
+    margin-left: 2.5rem;
+}
+
+.contactus-logos-information-sideheading {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.location-container .contactus-logos-information {
+    margin-top: 20px;
+}
+
+/* Form Section */
+/* Style for the spherical design */
+.spherical-design {
+    position: absolute;
+    top: 10px; /* Adjust based on the desired position */
+    right: 20px; /* Adjust based on the desired position */
+    width: 150px; /* Adjust size of the design */
+    z-index: -1; /* Place it behind other elements */
+}
+
+.spherical-design img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.7; /* Optional: make it slightly transparent */
+}
+
+/* Position adjustment for the form and other elements */
+#formsubmissioncontainer {
+    position: relative;
+    z-index: 1; /* Ensure form stays above design */
+    padding: 20px;
+}
+
+.contactusinformationcontainer {
+    position: relative;
+    z-index: 1;
+}
+
+#contactcontainer {
+    position: relative;
+    overflow: hidden; /* Prevents overflow of the design */
+}
+
+
+#formsubmissioncontainer {
+    width: 43%;
+    padding-left: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    border-color: #e5e7eb;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.formsubmissionheading h1 {
+    font-size: 2em;
+}
+
+.formsubmissionheading p {
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 20px;
+    padding-top: 12px;
+}
+
+.star{
+    color: red;
+}
+
+.formsubmissiondetails label {
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formsubmissiondetails input, 
+.formsubmissiondetails textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.formsubmissiondetails input[type="text"],
+.formsubmissiondetails input[type="email"],
+.formsubmissiondetails input[type="number"] {
+    height: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #0dba4b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Make the button take up the full width of the container */
+    height: 50px; /* Adjust the height to match the input fields */
+}
+button:hover {
+    background-color: #218838;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #contactcontainer {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    #contactus-container, 
+    #formsubmissioncontainer {
+        width: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    #formsubmissioncontainer {
+        margin-top: 40px;
+        padding-left: 30px;
+        padding-top: 40px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    button {
+        width: 100%;
+        height: 40px; /* Adjust button height to match input fields for mobile */
+    }
+
+    
+}
